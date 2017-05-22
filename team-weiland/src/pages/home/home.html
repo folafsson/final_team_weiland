@@ -1,14 +1,77 @@
-<ion-header>
-  <ion-navbar>
+﻿<ion-header class="background">
+  <ion-navbar color="primary">
+    <ion-buttons start color="primary">
+      <button
+          ion-button
+          icon-only
+          menuToggle>
+        <ion-icon name="ios-menu" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>
-      Ionic Blank
+      TeamWeilandLogo
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content  class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <button 
+         color="light"
+          class="btn"
+          block
+          outline
+          ion-button
+          [navPush]="aboutPage"
+          >Om Oss</button>
+      </ion-col>
+      <!-- <ion-col col-12>
+        <button
+          color="light"
+          class="btn"
+          block
+          outline
+          ion-button
+          [navPush]="servicePage"
+          >Vi Tilbyder</button>
+      </ion-col>
+      <ion-col col-12>
+        <button
+          color="light"
+          class="btn"
+          block
+          outline
+          ion-button
+          [navPush]="projectPage"
+          >Projecter</button>
+      </ion-col>-->
+      <ion-col col-12>
+        <button
+          color="light"
+          class="btn"
+          block
+          outline
+          ion-button
+          [navPush]="contactPage"
+          >Kontakt</button>
+      </ion-col>
+      <!--  <ion-col col-12>
+        <button 
+          color="light"
+          class="btn"
+          block
+          outline
+          ion-button
+          [navPush]="estimatePage">
+          Estimate
+        </button>
+      </ion-col>--> 
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer>
+
+</ion-footer>
