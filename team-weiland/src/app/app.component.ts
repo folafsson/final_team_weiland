@@ -8,6 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
 import { ProjectPage } from '../pages/projects/projects';
+import { ServicePage } from '../pages/services/services';
 
 @Component({
   templateUrl: 'app.html'
@@ -18,6 +19,7 @@ export class MyApp {
     aboutPage = AboutPage;
     contactPage = ContactPage;
     projectPage = ProjectPage;
+    servicePage = ServicePage;
     @ViewChild('nav') nav: NavController; 
 
     constructor(

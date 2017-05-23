@@ -1,7 +1,7 @@
 ﻿import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AboutPage } from "../about/about";
-//import { ServicePage } from "../services/services";
+import { ServicePage } from "../services/services";
 import { ProjectPage } from "../projects/projects";
 import { ContactPage } from "../contact/contact";
 //import { EstimatePage } from '../estimate/estimate';
@@ -16,7 +16,7 @@ import { ContactPage } from "../contact/contact";
 export class HomePage {
 
     aboutPage = AboutPage;
-    //servicePage = ServicePage;
+    servicePage = ServicePage;
     projectPage = ProjectPage;
     contactPage = ContactPage;
     //estimatePage = EstimatePage;

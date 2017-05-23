@@ -1,0 +1,164 @@
+﻿page-services {
+  .background {
+    background-color: #459092 !important;
+  }
+
+  p, h1, h2, h3, h4, h5 {
+    color: #459092 !important;
+  }
+
+  ion-card {
+    border: 0 !important;
+  }
+
+  .inspektion {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 130px;
+    width: 130px;
+    margin-left: 32%;
+    margin-top: 6%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .maler {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 145px;
+    width: 145px;
+    margin-left: 9%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .sand {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 145px;
+    width: 145px;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .elektrik {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 130px;
+    width: 130px;
+    margin-left: 32%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .fuger {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 145px;
+    width: 145px;
+    margin-left: 9%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .rigger {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 145px;
+    width: 145px;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .storm {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 130px;
+    width: 130px;
+    margin-left: 32%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .tag {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 130px;
+    width: 130px;
+    margin-left: 32%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .traekning {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 145px;
+    width: 145px;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .vindue {
+    background-color: #459092;
+    transform: rotate(45deg);
+    height: 145px;
+    width: 145px;
+    margin-left: 9%;
+    border-radius: 100%;
+
+    img {
+      transform: rotate(-45deg);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .back-pattern {
+  }
+}
