@@ -1,1 +1,32 @@
-<ion-nav [root]="rootPage"></ion-nav>
+﻿<ion-menu [content]="nav" side="right">
+  <ion-header>
+    <ion-toolbar class="background">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="background">
+    <ion-list>
+      <button ion-item
+              icon-right
+        Om Oss
+      </button>
+              icon-right
+              (click)="onLoad(servicePage)">
+        Vi Tilbyder
+      </button>
+      <button ion-item
+              icon-right
+              (click)="onLoad(projectPage)">
+        Projecter
+      <button ion-item
+              icon-right
+              (click)="onLoad(contactPage)">
+        Kontakt
+      </button>
+              icon-right
+              (click)="onLoad(estimatePage)">
+        Estimate
+    </ion-list>
+  </ion-content>
+</ion-menu>
+

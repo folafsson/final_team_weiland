@@ -12,9 +12,9 @@ import { ContactPage } from '../pages/contact/contact';
   templateUrl: 'app.html'
 })
 export class MyApp {
-    rootPage: any = HomePage;
+    tabsPage: any = TabsPage;
+    homePage = HomePage;
     aboutPage = AboutPage;
-    tabsPage = TabsPage;
     contactPage = ContactPage;
 
     @ViewChild('nav') nav: NavController; 

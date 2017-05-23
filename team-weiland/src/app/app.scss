@@ -1,5 +1,19 @@
-// http://ionicframework.com/docs/v2/theming/
+﻿// http://ionicframework.com/docs/v2/theming/
+ion-content {
+  .background {
+    background-color: #459092;
+  }
 
+  p, h1, h2, h3, h4, h5, li, ul {
+    color: #bbebed;
+  }
+
+  ion-menu {
+    background-color: #459092 !important;
+    max-height: 100px !important;
+    max-width: 50px !important;
+  }
+}
 
 // App Global Sass
 // --------------------------------------------------
