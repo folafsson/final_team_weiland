@@ -8,8 +8,10 @@
     <ion-list>
       <button ion-item
               icon-right
+              [navPush]="aboutPage">
         Om Oss
       </button>
+    <!--  <button ion-item
               icon-right
               (click)="onLoad(servicePage)">
         Vi Tilbyder
@@ -18,15 +20,19 @@
               icon-right
               (click)="onLoad(projectPage)">
         Projecter
+      </button>-->
       <button ion-item
               icon-right
               (click)="onLoad(contactPage)">
         Kontakt
       </button>
+  <!--    <button ion-item
               icon-right
               (click)="onLoad(estimatePage)">
         Estimate
+      </button>-->
     </ion-list>
   </ion-content>
 </ion-menu>
 
+<ion-nav [root]="tabsPage" #nav></ion-nav>
