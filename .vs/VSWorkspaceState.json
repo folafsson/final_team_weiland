@@ -3,13 +3,9 @@
     "",
     "\\team-weiland",
     "\\team-weiland\\src",
-    "\\team-weiland\\src\\app",
     "\\team-weiland\\src\\pages",
-    "\\team-weiland\\src\\pages\\about",
-    "\\team-weiland\\src\\pages\\contact",
-    "\\team-weiland\\src\\pages\\home",
-    "\\team-weiland\\src\\pages\\tabs"
+    "\\team-weiland\\src\\pages\\about"
   ],
-  "SelectedNode": "\\team-weiland\\src\\app\\main.ts",
+  "SelectedNode": "\\team-weiland\\src\\pages\\services",
   "PreviewInSolutionExplorer": false
 }
