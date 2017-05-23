@@ -9,6 +9,7 @@
 
   .input {
     background-color: #459092;
+    border-bottom: dotted 1px !important;
   }
 
   p, h1, h2, h3, h4, h5 {
@@ -20,5 +21,10 @@
     color: #bbebed;
     padding-top: 15px;
     padding-bottom: 35px;
+
+    button {
+      background-color: #bbebed;
+      color: #459092;
+    }
   }
 }

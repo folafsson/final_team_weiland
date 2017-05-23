@@ -9,58 +9,76 @@
     </ion-buttons>
     <ion-title text-center><img alt="logo" height="44" src="http://www.teamweiland.com/wp-content/uploads/2016/07/teamweiland-logo.png"></ion-title>
   </ion-navbar>
-
 </ion-header>
 
-<ion-content class="background">
-  <div class="contact">
-    <h1 padding text-left style="color:#bbebed;">Kontakt</h1>
-    <ion-grid>
-      <ion-row>
-        <ion-col col-12>
-          <ion-item class="background">
-            <ion-label floating style="color: #bbebed;">Navn</ion-label>
-            <ion-input style="color: #bbebed;"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col col-12>
-          <ion-item class="background">
-            <ion-label floating style="color: #bbebed;">Email</ion-label>
-            <ion-input style="color: #bbebed;"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col col-12>
-          <ion-item class="background">
-            <ion-label floating style="color: #bbebed;">Telefon</ion-label>
-            <ion-input style="color: #bbebed;"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col col-12>
-          <ion-item class="background">
-            <ion-label floating style="color:#bbebed;">Emne</ion-label>
-            <ion-input style="color: #bbebed;"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col col-12>
-          <ion-item class="background">
-            <ion-label floating style="color: #bbebed;">Besked</ion-label>
-            <ion-textarea style="color: #bbebed;"></ion-textarea>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <button 
-              style="float:right; border-radius:0;"
-              padding
-              type="submit"
-              ion-button
-              color="light"
-              outline
-              >Indsend
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+<ion-content class="nav-background">
+  <ion-card>
+    <div class="contact">
+      <h1 padding text-center style="color:#bbebed;">Kontakt Team Weiland</h1><hr />
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <ion-item class="background">
+              <ion-label floating style="color: #bbebed;">Navn</ion-label>
+              <ion-input style="color: #bbebed;"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12>
+            <ion-item class="background">
+              <ion-label floating style="color: #bbebed;">Email</ion-label>
+              <ion-input style="color: #bbebed;"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12>
+            <ion-item class="background">
+              <ion-label floating style="color: #bbebed;">Telefon</ion-label>
+              <ion-input style="color: #bbebed;"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12>
+            <ion-item class="background">
+              <ion-label floating style="color:#bbebed;">Emne</ion-label>
+              <ion-input style="color: #bbebed;"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12>
+            <ion-item class="background">
+              <ion-label floating style="color: #bbebed;">Besked</ion-label>
+              <ion-textarea style="color: #bbebed;"></ion-textarea>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button style="float:right; border-radius:0;"
+                    padding
+                    type="submit"
+                    ion-button
+                    full
+                    color="light"
+                    block>
+              INDSEND
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-card>
+  <ion-card class="background">
+    <ion-card-header text-center>
+      <h1>Eller ring til os i åbningstiden</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item class="background">
+        <ion-row>
+          <ion-col col-1>
+            <ion-icon name="md-call" color="light" padding-left></ion-icon>
+          </ion-col>
+          <ion-col col-11>
+            <h1 text-center>+45 6167 0942</h1>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
