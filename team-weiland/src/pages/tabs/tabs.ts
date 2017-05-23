@@ -7,8 +7,8 @@ import { ContactPage } from '../contact/contact';
     selector: 'page-tabs',
     template: `
     <ion-tabs color="primary">
-      <ion-tab [root]="homePage" tabTitle="Home" tabIcon="ios-home"></ion-tab>
-      <ion-tab [root]="contactPage" tabTitle="Contact" tabIcon="chatboxes"></ion-tab>
+      <ion-tab [root]="homePage" tabTitle="Hjem" tabIcon="ios-home"></ion-tab>
+      <ion-tab [root]="contactPage" tabTitle="Kontakt" tabIcon="chatboxes"></ion-tab>
       <ion-tab tabTitle="Facebook" tabIcon="logo-facebook" target="_system"></ion-tab>
     </ion-tabs>
 <script>
