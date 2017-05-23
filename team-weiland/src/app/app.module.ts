@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from "../pages/contact/contact";
 import { TabsPage } from '../pages/tabs/tabs';
+import { ProjectPage } from '../pages/projects/projects';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TabsPage } from '../pages/tabs/tabs';
       HomePage,
       AboutPage,
       ContactPage,
-      TabsPage
+      TabsPage,
+      ProjectPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { TabsPage } from '../pages/tabs/tabs';
       HomePage,
       AboutPage,
       ContactPage,
-      TabsPage
+      TabsPage,
+      ProjectPage
   ],
   providers: [
     StatusBar,

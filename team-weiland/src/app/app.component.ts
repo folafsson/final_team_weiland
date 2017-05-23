@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
+import { ProjectPage } from '../pages/projects/projects';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +17,7 @@ export class MyApp {
     homePage = HomePage;
     aboutPage = AboutPage;
     contactPage = ContactPage;
-
+    projectPage = ProjectPage;
     @ViewChild('nav') nav: NavController; 
 
     constructor(

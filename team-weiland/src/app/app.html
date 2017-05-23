@@ -8,19 +8,19 @@
     <ion-list class="background">
       <button ion-item
               icon-right
-              [navPush]="aboutPage">
+               (click)="onLoad(aboutPage)">
         Om Oss
       </button>
     <!--  <button ion-item
               icon-right
               (click)="onLoad(servicePage)">
         Vi Tilbyder
-      </button>
+      </button>-->
       <button ion-item
               icon-right
               (click)="onLoad(projectPage)">
         Projecter
-      </button>-->
+      </button>
       <button ion-item
               icon-right
               (click)="onLoad(contactPage)">
