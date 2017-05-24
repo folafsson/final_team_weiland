@@ -14,10 +14,11 @@
 </ion-header>
 
 <ion-content class="background">
+
   <ion-grid>
-    <ion-card color="light" text-center> 
+    <ion-card color="light" text-center class="front">
       <ion-card-header>
-        <h1>Håndværk i højden</h1> 
+        <h1>Håndværk i højden</h1>
       </ion-card-header>
       <ion-card-content text-justify>
         <h4>
@@ -26,57 +27,110 @@
         </h4>
       </ion-card-content>
     </ion-card>
-    <ion-row>
-      <ion-item class="col-12 inspektion">
-        <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-03.png"/>
-      </ion-item>
+
+    <ion-row class="rowback-one">
+      
+        <ion-fab >
+          <button ion-fab
+                  color="light"
+                  mini
+                  >
+            <img src="http://www.teamweiland.com/wp-content/uploads/2016/07/teamweiland-logo.png" />
+          </button>
+          <ion-fab-list>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-03.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Inspektion</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-06.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Malararbejde</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-07.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Sandblæsning / Epoxymaling</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-09.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Elektrikarbejde</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-05.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Fugerarbejde</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-04.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Riggerarbejde</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-02.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Stormskader</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-08.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Vinduespolering / -vask</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-01.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Trækning av kabler</h3>
+            <button ion-fab>
+              <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-10.png" />
+            </button>
+            <h3 style="color: #bbebed!important; margin-top:0; padding-left:10px;">Tagarbejde</h3>
+          </ion-fab-list>
+        </ion-fab>
+      
     </ion-row>
 
-    <ion-row>
-      <ion-item class="col-6 maler">
+
+ <!--   <ion-row class="rowback-one">
+      <ion-item class="col-12 inspektion rowback-two">
+        <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-03.png" />
+      </ion-item>
+    </ion-row>
+    <ion-row class="rowback-two">
+      <ion-item class="col-6 maler rowback-one">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-06.png" />
       </ion-item>
-      <ion-item class="col-6 sand" >
+      <ion-item class="col-6 sand rowback-one">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-07.png" />
       </ion-item>
     </ion-row>
-  
-    <ion-row>
-      <ion-item class="col-12 elektrik">
+
+    <ion-row class="rowback-one">
+      <ion-item class="col-12 elektrik rowback-two">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-09.png" />
       </ion-item>
     </ion-row>
-  
-    <ion-row>
-      <ion-item class="col-6 fuger">
+
+    <ion-row class="rowback-two">
+      <ion-item class="col-6 fuger rowback-one">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-05.png" />
       </ion-item>
-      <ion-item class="col-6 rigger" >
+      <ion-item class="col-6 rigger rowback-one">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-04.png" />
       </ion-item>
     </ion-row>
-
-    <ion-row>
-      <ion-item class="col-12 storm">
+    <ion-row class="rowback-one">
+      <ion-item class="col-12 storm rowback-two">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-02.png" />
       </ion-item>
     </ion-row>
-  
-    <ion-row>
-      <ion-item class="col-6 vindue">
+
+    <ion-row class="rowback-two">
+      <ion-item class="col-6 vindue rowback-one">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-08.png" />
       </ion-item>
-      <ion-item class="col-6 traekning">
+      <ion-item class="col-6 traekning rowback-one">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-01.png" />
       </ion-item>
     </ion-row>
-
-    <ion-row>
-      <ion-item class="col-12 tag">
+    <ion-row class="rowback-one">
+      <ion-item class="col-12 tag rowback-two">
         <img src="http://www.teamweiland.com/wp-content/uploads/2016/08/ikoner-10.png" />
       </ion-item>
-    </ion-row>
-
+    </ion-row>-->
   </ion-grid>
 
 </ion-content>
