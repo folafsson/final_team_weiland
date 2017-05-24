@@ -9,7 +9,17 @@ import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
 import { ProjectPage } from '../pages/projects/projects';
 import { ServicePage } from '../pages/services/services';
-
+import { ElektrikPage } from '../pages/elektrik/elektrik';
+import { FugerPage } from '../pages/fuger/fuger';
+import { InspektionPage } from '../pages/inspektion/inspektion';
+import { MalerPage } from '../pages/maler/maler';
+import { VinduePage } from '../pages/vindue/vindue';
+import { StormPage } from '../pages/storm/storm';
+import { RiggerPage } from '../pages/rigger/rigger';
+import { TraekningPage } from '../pages/traekning/traekning';
+import { TagPage } from '../pages/tag/tag';
+import { SandPage } from '../pages/sand/sand';
+ 
 @Component({
   templateUrl: 'app.html'
 })
@@ -20,6 +30,16 @@ export class MyApp {
     contactPage = ContactPage;
     projectPage = ProjectPage;
     servicePage = ServicePage;
+    elektrikPage = ElektrikPage;
+    fugerPage = FugerPage;
+    malerPage = MalerPage;
+    inspektionPage = InspektionPage;
+    vinduePage = VinduePage;
+    stormPage = StormPage;
+    riggerPage = RiggerPage;
+    traekningPage = TraekningPage;
+    tagPage = TagPage;
+    sandPage = SandPage;
     @ViewChild('nav') nav: NavController; 
 
     constructor(

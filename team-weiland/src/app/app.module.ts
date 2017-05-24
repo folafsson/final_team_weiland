@@ -11,7 +11,16 @@ import { ContactPage } from "../pages/contact/contact";
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProjectPage } from '../pages/projects/projects';
 import { ServicePage } from "../pages/services/services";
-
+import { ElektrikPage } from '../pages/elektrik/elektrik';
+import { FugerPage } from '../pages/fuger/fuger';
+import { InspektionPage } from '../pages/inspektion/inspektion';
+import { MalerPage } from '../pages/maler/maler';
+import { VinduePage } from '../pages/vindue/vindue';
+import { StormPage } from '../pages/storm/storm';
+import { RiggerPage } from '../pages/rigger/rigger';
+import { TraekningPage } from '../pages/traekning/traekning';
+import { TagPage } from '../pages/tag/tag';
+import { SandPage } from '../pages/sand/sand';
 
 @NgModule({
   declarations: [
@@ -21,7 +30,17 @@ import { ServicePage } from "../pages/services/services";
       ContactPage,
       TabsPage,
       ProjectPage,
-      ServicePage
+      ServicePage,
+      ElektrikPage,
+      FugerPage,
+      InspektionPage,
+      MalerPage,
+      VinduePage,
+      StormPage,
+      RiggerPage,
+      TraekningPage,
+      TagPage,
+      SandPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +54,17 @@ import { ServicePage } from "../pages/services/services";
       ContactPage,
       TabsPage,
       ProjectPage,
-      ServicePage
+      ServicePage,
+      ElektrikPage,
+      FugerPage,
+      InspektionPage,
+      MalerPage,
+      VinduePage,
+      StormPage,
+      RiggerPage,
+      TraekningPage,
+      TagPage,
+      SandPage
   ],
   providers: [
     StatusBar,
