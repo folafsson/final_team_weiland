@@ -4,8 +4,10 @@
     "\\team-weiland",
     "\\team-weiland\\src",
     "\\team-weiland\\src\\pages",
-    "\\team-weiland\\src\\pages\\about"
+    "\\team-weiland\\src\\pages\\about",
+    "\\team-weiland\\src\\pages\\services",
+    "\\team-weiland\\src\\pages\\services\\services"
   ],
-  "SelectedNode": "\\team-weiland\\src\\pages\\services",
+  "SelectedNode": "\\team-weiland\\src\\pages\\services\\services\\elektrik.html",
   "PreviewInSolutionExplorer": false
 }
