@@ -4,8 +4,7 @@ import { AboutPage } from "../about/about";
 import { ServicePage } from "../services/services";
 import { ProjectPage } from "../projects/projects";
 import { ContactPage } from "../contact/contact";
-//import { EstimatePage } from '../estimate/estimate';
-//import { InspektionPage } from '../inspektion/inspektion';
+
 
 
 
@@ -19,6 +18,4 @@ export class HomePage {
     servicePage = ServicePage;
     projectPage = ProjectPage;
     contactPage = ContactPage;
-    //estimatePage = EstimatePage;
-    //inspektionPage = InspektionPage;
 }
