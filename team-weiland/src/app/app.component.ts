@@ -2,6 +2,7 @@
 import { Platform, NavController, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { DeviceFeedback } from '@ionic-native/device-feedback';
 
 import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -46,17 +47,26 @@ export class MyApp {
         platform: Platform,
         statusBar: StatusBar,
         splashScreen: SplashScreen,
-        private menuCtrl: MenuController) {
+        private menuCtrl: MenuController,
+        private deviceFeedback: DeviceFeedback) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
     });
-  }
+}
+
+
   onLoad(page: any) {
-      this.nav.setRoot(page);
+      this.nav.push(page);
       this.menuCtrl.close();
+      this.deviceFeedback.isFeedbackEnabled()
+      .then((feedback) => {
+          console.log(feedback);
+          this.deviceFeedback.acoustic();
+          this.deviceFeedback.haptic(500);
+      });
   }
 }
 
