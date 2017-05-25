@@ -15,5 +15,61 @@
 
 
 <ion-content padding class="background">
-   
+  <h1 text-center class="background" color="light">Få et prisoverslag
+</h1>
+  <form>
+     <ion-list>
+       <ion-item class="background">
+         <ion-label color="light" fixed>Vælg service:</ion-label>
+         <ion-select name="title">
+           <ion-option color="light" value="inspektion">Inspektion</ion-option>
+           <ion-option color="light" value="sand">Sandblæsning</ion-option>
+           <ion-option color="light" value="fuger">Fugerarbejde</ion-option>
+           <ion-option color="light" value="maler">Malerarbejde</ion-option>
+           <ion-option color="light" value="rigger">Riggerarbejde</ion-option>
+           <ion-option color="light" value="traekning">Trækning</ion-option>
+           <ion-option color="light" value="elektrik">Elektrikarbejde</ion-option>
+           <ion-option color="light" value="tag">Tagarbejde</ion-option>
+           <ion-option color="light" value="storm">Stormskader</ion-option>
+           <ion-option color="light" value="vindue">Vinduespolering</ion-option>
+         </ion-select>
+       </ion-item>
+       <ion-item class="background">
+         <ion-label color="light" floating>Kort Beskrivelse</ion-label>
+         <ion-textarea
+                    name="information"
+                    ngModel
+                    required></ion-textarea>
+       </ion-item>
+     </ion-list>
+     <ion-grid>
+       <ion-row>
+         <ion-col col-6>
+           <button
+              ion-button
+              block
+              color="light"
+              outline
+              type="button"
+              icon-left
+              (click)="onLocate">
+              <ion-icon name="ios-pin"></ion-icon>
+             Auto Søgning
+           </button>
+         </ion-col>
+         <ion-col col-6>
+           <button ion-button
+                   block
+                   color="light"
+                   outline
+                   type="button"
+                   icon-left
+                   (click)="onOpenMap">
+             <ion-icon name="map"></ion-icon>
+             Vælg på kort
+           </button>
+         </ion-col>
+       </ion-row>
+     </ion-grid>
+   </form>
 </ion-content>

@@ -19,35 +19,39 @@
     <ion-row>
        <ion-col col>
         <button
+          small      
           color="light"
           class="btn"
           block
           outline
           ion-button
-          [navPush]="servicePage"
-          >Vi Tilbyder</button>
+          [navPush]="servicePage">
+         <ion-icon padding name="ios-construct"></ion-icon>
+         Vi Tilbyder</button>
       </ion-col>
       <ion-col col>
         <button
+          small
           color="light"
           class="btn"
           block
           outline
           ion-button
-          [navPush]="projectPage"
-          >Projecter</button>
+          [navPush]="projectPage">
+          <ion-icon padding name="md-done-all"></ion-icon>
+          Projecter
+          </button>
       </ion-col>      
       <ion-col col>
         <button 
           color="light"
           class="btn"
           block
-          outline
           ion-button
           [navPush]="addPlacePage">
-          <ion-icon padding name="camera"></ion-icon>
+          <ion-icon color="primary" name="camera"></ion-icon>
+          <ion-icon color="primary" padding name="ios-pin"></ion-icon>
           Get A Job Estimate
-          <ion-icon padding name="ios-pin"></ion-icon>
         </button>
       </ion-col> 
     </ion-row>
