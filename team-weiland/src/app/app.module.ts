@@ -8,7 +8,6 @@ import { DeviceFeedback } from '@ionic-native/device-feedback';
 import { Vibration } from '@ionic-native/vibration';
 
 import { HomePage } from '../pages/home/home';
-import { AboutPage } from '../pages/about/about';
 import { ContactPage } from "../pages/contact/contact";
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProjectPage } from '../pages/projects/projects';
@@ -29,7 +28,6 @@ import { LoadingPage } from '../pages/loading/loading';
   declarations: [
     MyApp,
       HomePage,
-      AboutPage,
       ContactPage,
       TabsPage,
       ProjectPage,
@@ -54,7 +52,6 @@ import { LoadingPage } from '../pages/loading/loading';
   entryComponents: [
     MyApp,
       HomePage,
-      AboutPage,
       ContactPage,
       TabsPage,
       ProjectPage,

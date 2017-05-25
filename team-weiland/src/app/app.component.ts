@@ -4,8 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DeviceFeedback } from '@ionic-native/device-feedback';
 import { Vibration } from '@ionic-native/vibration';
-
-import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
@@ -29,7 +27,6 @@ import { LoadingPage } from '../pages/loading/loading';
 export class MyApp {
     tabsPage: any = TabsPage;
     homePage = HomePage;
-    aboutPage = AboutPage;
     contactPage = ContactPage;
     projectPage = ProjectPage;
     servicePage = ServicePage;
