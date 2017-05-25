@@ -21,7 +21,7 @@
      <ion-list>
        <ion-item class="background">
          <ion-label color="light" fixed>Vælg service:</ion-label>
-         <ion-select name="title">
+         <ion-select ngModel name="title">
            <ion-option color="light" value="inspektion">Inspektion</ion-option>
            <ion-option color="light" value="sand">Sandblæsning</ion-option>
            <ion-option color="light" value="fuger">Fugerarbejde</ion-option>
@@ -70,6 +70,48 @@
            </button>
          </ion-col>
        </ion-row>
+       <ion-row>
+         <ion-col>
+           <p>replace here with map</p>
+         </ion-col>
+       </ion-row>
+       <ion-row>
+         <ion-col text-center>
+           <h2 color="light">Tag et Billede</h2>
+         </ion-col>
+       </ion-row>
+       <ion-row>
+         <ion-col>
+           <button ion-button
+                   block
+                   color="light"
+                   outline
+                   type="button"
+                   icon-left
+                   (click)="onTakephoto">
+             <ion-icon name="camera"></ion-icon>
+             Åbent Kamera
+           </button>
+         </ion-col>
+       </ion-row> 
+       <ion-row>
+         <ion-col>
+           <img [src]="" />
+         </ion-col>
+       </ion-row>
+       <ion-row>
+         <ion-col>
+           <button ion-button
+                   block
+                   color="light"
+                   outline
+                   type="submit"
+                   icon-left>
+             <ion-icon name="ios-send"></ion-icon>
+             Få overslag
+           </button>
+         </ion-col>
+       </ion-row> 
      </ion-grid>
    </form>
 </ion-content>
