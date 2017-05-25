@@ -23,6 +23,11 @@ import { TraekningPage } from '../pages/traekning/traekning';
 import { TagPage } from '../pages/tag/tag';
 import { SandPage } from '../pages/sand/sand';
 import { LoadingPage } from '../pages/loading/loading';
+import { AddPlacePage } from '../pages/add-place/add-place';
+import { SetLocationPage } from '../pages/set-location/set-location';
+import { PlacePage } from '../pages/place/place';
+
+
 
 @NgModule({
   declarations: [
@@ -42,7 +47,10 @@ import { LoadingPage } from '../pages/loading/loading';
       TraekningPage,
       TagPage,
       SandPage,
-      LoadingPage
+      LoadingPage,
+      AddPlacePage,
+      SetLocationPage,
+      PlacePage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +74,10 @@ import { LoadingPage } from '../pages/loading/loading';
       TraekningPage,
       TagPage,
       SandPage,
-      LoadingPage
+      LoadingPage,
+      AddPlacePage,
+      SetLocationPage,
+      PlacePage
   ],
   providers: [
     StatusBar,

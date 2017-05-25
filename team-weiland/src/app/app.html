@@ -6,26 +6,28 @@
   </ion-header>
   <ion-content>
     <ion-list class="background">
-      <button ion-item
-              icon-right
-              (click)="onLoad(servicePage)">
-        Vi Tilbyder
-      </button>
-      <button ion-item
-              icon-right
-              (click)="onLoad(projectPage)">
-        Projecter
-      </button>
-      <button ion-item
-              icon-right
-              (click)="onLoad(contactPage)">
-        Kontakt
-      </button>
-  <!--    <button ion-item
-              icon-right
-              (click)="onLoad(estimatePage)">
-        Estimate
-      </button>-->
+      <ion-buttons>
+        <button ion-item
+                icon-right
+                (click)="onLoad(servicePage)">
+          Vi Tilbyder
+        </button>
+        <button ion-item
+                icon-right
+                (click)="onLoad(projectPage)">
+          Projecter
+        </button>
+        <button ion-item
+                icon-right
+                (click)="onLoad(contactPage)">
+          Kontakt
+        </button>
+        <!-- <button ion-item
+                icon-right
+                (click)="onLoad(addPlacePage)">
+          Estimate
+        </button>-->  
+      </ion-buttons>
     </ion-list>
   </ion-content>
 </ion-menu>
