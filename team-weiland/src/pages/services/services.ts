@@ -1,5 +1,6 @@
 ﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Vibration } from '@ionic-native/vibration';
 import { ElektrikPage } from '../../pages/elektrik/elektrik';
 import { FugerPage } from '../../pages/fuger/fuger';
 import { InspektionPage } from '../../pages/inspektion/inspektion';
@@ -17,6 +18,9 @@ import { SandPage } from '../../pages/sand/sand';
   templateUrl: 'services.html',
 })
 export class ServicePage {
+    constructor(private vibration: Vibration) { }
+    
+
     elektrikPage = ElektrikPage;
     fugerPage = FugerPage;
     inspektionPage = InspektionPage;
@@ -27,4 +31,11 @@ export class ServicePage {
     traekningPage = TraekningPage;
     tagPage = TagPage;
     sandPage = SandPage;
+    onLoad(any) {
+        console.log("working!");
+        this.vibration.vibrate(500);
+    }
 }
+//onVibrate(button: any){
+//    this.vibration.vibrate(500);
+//}

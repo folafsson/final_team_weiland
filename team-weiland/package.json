@@ -24,9 +24,11 @@
     "@ionic-native/device-feedback": "^3.10.3",
     "@ionic-native/splash-screen": "3.7.0",
     "@ionic-native/status-bar": "3.7.0",
+    "@ionic-native/vibration": "^3.10.3",
     "@ionic/cli-plugin-ionic-angular": "^1.2.0",
     "@ionic/storage": "2.0.1",
     "cordova-plugin-velda-devicefeedback": "0.0.2",
+    "cordova-plugin-vibration": "^2.1.5",
     "ionic-angular": "3.2.1",
     "ionicons": "3.0.0",
     "rxjs": "5.1.1",
@@ -42,7 +44,8 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-velda-devicefeedback": {}
+      "cordova-plugin-velda-devicefeedback": {},
+      "cordova-plugin-vibration": {}
     }
   }
 }

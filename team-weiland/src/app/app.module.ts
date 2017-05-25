@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { DeviceFeedback } from '@ionic-native/device-feedback';
-
+import { Vibration } from '@ionic-native/vibration';
 
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
@@ -23,6 +23,7 @@ import { RiggerPage } from '../pages/rigger/rigger';
 import { TraekningPage } from '../pages/traekning/traekning';
 import { TagPage } from '../pages/tag/tag';
 import { SandPage } from '../pages/sand/sand';
+import { LoadingPage } from '../pages/loading/loading';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SandPage } from '../pages/sand/sand';
       RiggerPage,
       TraekningPage,
       TagPage,
-      SandPage
+      SandPage,
+      LoadingPage
   ],
   imports: [
     BrowserModule,
@@ -66,12 +68,14 @@ import { SandPage } from '../pages/sand/sand';
       RiggerPage,
       TraekningPage,
       TagPage,
-      SandPage
+      SandPage,
+      LoadingPage
   ],
   providers: [
     StatusBar,
       SplashScreen,
       DeviceFeedback,
+      Vibration,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
