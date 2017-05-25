@@ -17,7 +17,7 @@
 <ion-content padding class="background">
   <h1 text-center class="background" color="light">Få et prisoverslag
 </h1>
-  <form>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
      <ion-list>
        <ion-item class="background">
          <ion-label color="light" fixed>Vælg service:</ion-label>
@@ -106,7 +106,8 @@
                    color="light"
                    outline
                    type="submit"
-                   icon-left>
+                   icon-left
+                   [disabled]="!f.valid">
              <ion-icon name="ios-send"></ion-icon>
              Få overslag
            </button>
