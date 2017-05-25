@@ -7,7 +7,7 @@ import { MyApp } from './app.component';
 import { DeviceFeedback } from '@ionic-native/device-feedback';
 import { Vibration } from '@ionic-native/vibration';
 import { AgmCoreModule } from 'angular2-google-maps/core';
-
+import { Geolocation } from '@ionic-native/geolocation';
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from "../pages/contact/contact";
 import { TabsPage } from '../pages/tabs/tabs';
@@ -88,6 +88,7 @@ import { PlacePage } from '../pages/place/place';
       SplashScreen,
       DeviceFeedback,
       Vibration,
+      Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

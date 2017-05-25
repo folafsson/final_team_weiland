@@ -22,9 +22,35 @@
         <sebm-google-map
               [latitude]="location.lat"
               [longitude]="location.lng"
-              [zoom]="15">
-
+              [zoom]="15"
+              (mapClick)="onSetMarker($event)"> 
+          <sebm-google-map-marker 
+              [latitude]="marker.lat"
+              [longitude]="marker.lng"
+              *ngIf="marker">
+          </sebm-google-map-marker>
         </sebm-google-map> 
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button
+                ion-button
+                block
+                color="light"
+                type="button"
+                (click)="onConfirm()"
+                [disabled]="!marker"
+                >Bekræfte</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button
+                block
+                color="light"
+                type="button"
+                (click)="onAbort()">
+           Annuller
+        </button>
       </ion-col>
     </ion-row>
   </ion-grid>

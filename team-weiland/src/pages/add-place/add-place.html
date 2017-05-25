@@ -52,7 +52,7 @@
               color="light"
               type="button"
               icon-left
-              (click)="onLocate">
+              (click)="onLocate()">
               <ion-icon color="primary" name="ios-pin"></ion-icon>
              Auto Søgning
            </button>
@@ -72,9 +72,17 @@
 
        </ion-row>
 
-       <ion-row>
+       <ion-row *ngIf="locationIsSet">
          <ion-col>
-           <p>replace here with map</p>
+           <sebm-google-map
+                [latitude]="location.lat"
+                [longitude]="location.lng"
+                [zoom]="15">
+             <sebm-google-map-marker 
+                [latitude]="location.lat"
+                [longitude]="location.lng">
+             </sebm-google-map-marker>
+           </sebm-google-map>
          </ion-col>
        </ion-row>
 
@@ -91,7 +99,7 @@
                    color="light"
                    type="button"
                    icon-left
-                   (click)="onTakephoto">
+                   (click)="onTakephoto()">
              <ion-icon color="primary" name="camera"></ion-icon>
              Åbent Kamera
            </button>
@@ -111,7 +119,7 @@
                    color="light"
                    type="submit"
                    icon-left
-                   [disabled]="!f.valid">
+                   [disabled]="!f.valid || !locationIsSet">
              <ion-icon color="primary" name="ios-send"></ion-icon>
              Få overslag
            </button>
