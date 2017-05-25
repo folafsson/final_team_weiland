@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { DeviceFeedback } from '@ionic-native/device-feedback';
 import { Vibration } from '@ionic-native/vibration';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from "../pages/contact/contact";
@@ -54,7 +55,10 @@ import { PlacePage } from '../pages/place/place';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyAtGOloqdslK13ELBadqG_5aicSnjoNh1c'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

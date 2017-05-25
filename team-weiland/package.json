@@ -27,6 +27,7 @@
     "@ionic-native/vibration": "^3.10.3",
     "@ionic/cli-plugin-ionic-angular": "^1.2.0",
     "@ionic/storage": "2.0.1",
+    "angular2-google-maps": "^0.17.0",
     "cordova-plugin-velda-devicefeedback": "0.0.2",
     "cordova-plugin-vibration": "^2.1.5",
     "ionic-angular": "3.2.1",

@@ -15,8 +15,7 @@
 
 
 <ion-content padding class="background">
-  <h1 text-center class="background" color="light">Få et prisoverslag
-</h1>
+  <h1 text-center class="background" color="light">Få et prisoverslag</h1>
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
      <ion-list>
        <ion-item class="background">
@@ -43,76 +42,83 @@
        </ion-item>
      </ion-list>
      <ion-grid>
+
        <ion-row>
+
          <ion-col col-6>
            <button
               ion-button
               block
               color="light"
-              outline
               type="button"
               icon-left
               (click)="onLocate">
-              <ion-icon name="ios-pin"></ion-icon>
+              <ion-icon color="primary" name="ios-pin"></ion-icon>
              Auto Søgning
            </button>
          </ion-col>
+
          <ion-col col-6>
            <button ion-button
                    block
                    color="light"
-                   outline
                    type="button"
                    icon-left
-                   (click)="onOpenMap">
-             <ion-icon name="map"></ion-icon>
+                   (click)="onOpenMap()">
+             <ion-icon color="primary" name="map"></ion-icon>
              Vælg på kort
            </button>
          </ion-col>
+
        </ion-row>
+
        <ion-row>
          <ion-col>
            <p>replace here with map</p>
          </ion-col>
        </ion-row>
+
        <ion-row>
          <ion-col text-center>
            <h2 color="light">Tag et Billede</h2>
          </ion-col>
        </ion-row>
+
        <ion-row>
          <ion-col>
            <button ion-button
                    block
                    color="light"
-                   outline
                    type="button"
                    icon-left
                    (click)="onTakephoto">
-             <ion-icon name="camera"></ion-icon>
+             <ion-icon color="primary" name="camera"></ion-icon>
              Åbent Kamera
            </button>
          </ion-col>
        </ion-row> 
+
        <ion-row>
          <ion-col>
            <img [src]="" />
          </ion-col>
        </ion-row>
+
        <ion-row>
          <ion-col>
            <button ion-button
                    block
                    color="light"
-                   outline
                    type="submit"
                    icon-left
                    [disabled]="!f.valid">
-             <ion-icon name="ios-send"></ion-icon>
+             <ion-icon color="primary" name="ios-send"></ion-icon>
              Få overslag
            </button>
          </ion-col>
        </ion-row> 
+
      </ion-grid>
+
    </form>
 </ion-content>
