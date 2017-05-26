@@ -8,6 +8,10 @@ import { DeviceFeedback } from '@ionic-native/device-feedback';
 import { Vibration } from '@ionic-native/vibration';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import { File } from '@ionic-native/file';
+
+
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from "../pages/contact/contact";
 import { TabsPage } from '../pages/tabs/tabs';
@@ -27,7 +31,7 @@ import { LoadingPage } from '../pages/loading/loading';
 import { AddPlacePage } from '../pages/add-place/add-place';
 import { SetLocationPage } from '../pages/set-location/set-location';
 import { PlacePage } from '../pages/place/place';
-
+import { PlaceService } from '../serve/place.serve';
 
 
 @NgModule({
@@ -89,6 +93,9 @@ import { PlacePage } from '../pages/place/place';
       DeviceFeedback,
       Vibration,
       Geolocation,
+      Camera,
+      PlaceService,
+      File,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

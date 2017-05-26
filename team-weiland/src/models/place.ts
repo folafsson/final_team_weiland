@@ -3,6 +3,6 @@
         public title: string,
         public information: string,
         public location: Location,
-        public imagePath: string
+        public imageUrl: string
     ) { }
 }

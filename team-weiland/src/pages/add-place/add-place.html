@@ -99,16 +99,16 @@
                    color="light"
                    type="button"
                    icon-left
-                   (click)="onTakephoto()">
+                   (click)="onTakePhoto()">
              <ion-icon color="primary" name="camera"></ion-icon>
              Åbent Kamera
            </button>
          </ion-col>
        </ion-row> 
 
-       <ion-row>
+       <ion-row *ngIf="imageUrl != ''">
          <ion-col>
-           <img [src]="" />
+           <img [src]="imageUrl" />
          </ion-col>
        </ion-row>
 
@@ -119,7 +119,7 @@
                    color="light"
                    type="submit"
                    icon-left
-                   [disabled]="!f.valid || !locationIsSet">
+                   [disabled]="!f.valid || !locationIsSet || imageUrl == ''">
              <ion-icon color="primary" name="ios-send"></ion-icon>
              Få overslag
            </button>
@@ -129,4 +129,15 @@
      </ion-grid>
 
    </form>
+  <h1 text-center class="background" color="light">Gemte steder</h1>
+  <ion-card 
+            *ngFor="let place of places; let i = index"
+            (click)="onOpenPlace(place, i)">
+    <img [src]="place.imageUrl" />
+    <ion-content>
+      <h2 text-center>{{ place.title }}</h2>
+      <p>{{ place.information }}</p>
+    </ion-content>
+
+  </ion-card>
 </ion-content>

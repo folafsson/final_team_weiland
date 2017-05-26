@@ -20,7 +20,6 @@ import { TraekningPage } from '../pages/traekning/traekning';
 import { TagPage } from '../pages/tag/tag';
 import { SandPage } from '../pages/sand/sand';
 import { LoadingPage } from '../pages/loading/loading';
-
 @Component({
   templateUrl: 'app.html'
 })
