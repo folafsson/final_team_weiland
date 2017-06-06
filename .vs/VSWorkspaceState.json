@@ -4,17 +4,9 @@
     "\\team-weiland",
     "\\team-weiland\\src",
     "\\team-weiland\\src\\app",
-    "\\team-weiland\\src\\pages",
-    "\\team-weiland\\src\\pages\\elektrik",
-    "\\team-weiland\\src\\pages\\fuger",
-    "\\team-weiland\\src\\pages\\rigger",
-    "\\team-weiland\\src\\pages\\sand",
-    "\\team-weiland\\src\\pages\\services",
-    "\\team-weiland\\src\\pages\\services\\services",
-    "\\team-weiland\\src\\pages\\tag",
-    "\\team-weiland\\src\\pages\\traekning",
-    "\\team-weiland\\src\\pages\\vindue"
+    "\\team-weiland\\src\\serve",
+    "\\team-weiland\\src\\theme"
   ],
-  "SelectedNode": "\\team-weiland\\src\\app\\app.module.ts",
+  "SelectedNode": "\\team-weiland\\ionic.config.json",
   "PreviewInSolutionExplorer": false
 }
