@@ -40,7 +40,10 @@ export class AddPlacePage implements OnInit {
     }
 
     ngOnInit() {
-        this.placeService.fetchPlaces();
+        this.placeService.fetchPlaces()
+        .then(
+            (places: Place[]) => this.places = places
+        );
     }
 
     onSubmit(form: NgForm) {
@@ -101,7 +104,8 @@ export class AddPlacePage implements OnInit {
             imageData => {
                 const currentName = imageData.replace(/^.*[\\\/]/, ''); // removing unwanted symbold and replacing (,) with empty string
                 const path = imageData.replace(/[^\/]*$/, '');
-                this.file.moveFile(path, currentName, cordova.file.dataDirectory, currentName)  //somthing is amiss here (should work now)!! (maybe just need a device for testing)
+                const newFileName = new Date().getUTCMilliseconds() + '.jpeg';
+                this.file.moveFile(path, currentName, cordova.file.dataDirectory, newFileName)  //somthing is amiss here (should work now)!! (maybe just need a device for testing)
                     .then(
                       (data: Entry) => {
                           this.imageUrl = data.nativeURL;
