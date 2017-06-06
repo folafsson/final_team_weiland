@@ -2,7 +2,7 @@
 import { IonicPage, NavController, NavParams, ModalController, ToastController, LoadingController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Camera, CameraOptions } from '@ionic-native/camera';
-import { File } from '@ionic-native/file';
+import { File, Entry, FileError } from '@ionic-native/file';
 import { NgForm } from '@angular/forms';
 import { Location } from '../../models/location';
 import { SetLocationPage } from '../set-location/set-location'
@@ -12,7 +12,7 @@ import { PlacePage } from '../place/place';
 
 
 
-declare var cordova: any;
+declare var cordova: any; 
 
 @IonicPage()
 @Component({
@@ -45,13 +45,13 @@ export class AddPlacePage implements OnInit {
 
     onSubmit(form: NgForm) {
         this.placeService.addPlace(form.value.title, form.value.information, form.value.location, form.value.imageUrl);
-        form.reset();
-        this.location = {
+        form.reset(); //clearing the form
+        this.location = { //setting the location back to the train station
             lat: 54.912066,
             lng: 9.778986
         };
-        this.imageUrl = '';
-        this.locationIsSet = false;
+        this.imageUrl = ''; //clearing the image url and setting to default
+        this.locationIsSet = false;  //same, setting to default
     }
 
     onOpenMap() {
@@ -99,17 +99,17 @@ export class AddPlacePage implements OnInit {
         })
             .then(
             imageData => {
-                const currentName = imageData.replace(/^.*[\\\/]/, '');
+                const currentName = imageData.replace(/^.*[\\\/]/, ''); // removing unwanted symbold and replacing (,) with empty string
                 const path = imageData.replace(/[^\/]*$/, '');
-                this.file.moveFile(path, currentName, cordova.file.dataDirectory, currentName)  //somthing is amiss here!! WTF
+                this.file.moveFile(path, currentName, cordova.file.dataDirectory, currentName)  //somthing is amiss here (should work now)!! (maybe just need a device for testing)
                     .then(
-                    data => {
-                        this.imageUrl = data.nativeURL;
-                        this.file.removeFile(path, currentName);
-                    }
+                      (data: Entry) => {
+                          this.imageUrl = data.nativeURL;
+                          this.file.removeFile(path, currentName);//works as a camera clean up
+                      }
                     )
                     .catch(
-                    err => {
+                    (err: FileError) => {
                         this.imageUrl = '';
                         const toast = this.toastCtrl.create({
                             message: 'Kunne ikke gemme billede, prøv igen!',
@@ -137,7 +137,7 @@ export class AddPlacePage implements OnInit {
         this.places = this.placeService.loadPlaces();
     }
     onOpenPlace(place: Place, index:number) {
-        let modal = this.modalCtrl.create(PlacePage, { place: place, index:index });
+        const modal = this.modalCtrl.create(PlacePage, { place: place, index:index });
         modal.present();
     }
 }

@@ -12,17 +12,16 @@ export class PlacePage {
     index: number;
     constructor(
         public navParams: NavParams,
-        private vievCtrl: ViewController,
+        private viewCtrl: ViewController,
         private placeService: PlaceService) {
         this.place = this.navParams.get('place');
         this.index = this.navParams.get('index');
     }
     onLeave() {
-        this.vievCtrl.dismiss();
+        this.viewCtrl.dismiss();
     }
     onDelete() {
         this.placeService.deletePlace(this.index);
-
         this.onLeave();
     }
 }
