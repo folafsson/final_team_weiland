@@ -1,6 +1,6 @@
 ﻿import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ProjectPage } from '../projects';
+import { ProjectPage } from './projects';
 
 @NgModule({
   declarations: [

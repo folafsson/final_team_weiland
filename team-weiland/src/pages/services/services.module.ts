@@ -1,6 +1,6 @@
 ﻿import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ServicePage } from '../services';
+import { ServicePage } from './services';
 
 @NgModule({
   declarations: [

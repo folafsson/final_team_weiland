@@ -1,4 +1,4 @@
-﻿import { Storage } from '@ionic/storage';
+﻿import { Storage, IonicStorageModule } from '@ionic/storage';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule, NavController } from 'ionic-angular';
@@ -62,7 +62,8 @@ import { PlaceService } from '../serve/place.serve';
     IonicModule.forRoot(MyApp),
     AgmCoreModule.forRoot({
         apiKey: 'AIzaSyAtGOloqdslK13ELBadqG_5aicSnjoNh1c'
-    })
+    }),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -96,7 +97,6 @@ import { PlaceService } from '../serve/place.serve';
       Camera,
       PlaceService,
       File,
-      Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
