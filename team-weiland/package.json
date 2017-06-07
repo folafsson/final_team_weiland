@@ -31,12 +31,23 @@
     "@ionic/cli-plugin-ionic-angular": "^1.2.0",
     "@ionic/storage": "^2.0.1",
     "angular2-google-maps": "^0.17.0",
+    "cordova-android": "^6.2.3",
+    "cordova-plugin-camera": "~2.4.1",
+    "cordova-plugin-compat": "^1.1.0",
+    "cordova-plugin-console": "^1.0.5",
+    "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-file": "^4.3.3",
     "cordova-plugin-geolocation": "^2.4.3",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-statusbar": "^2.2.2",
     "cordova-plugin-velda-devicefeedback": "0.0.2",
     "cordova-plugin-vibration": "^2.1.5",
+    "cordova-plugin-whitelist": "^1.3.1",
+    "exact": "^0.8.0",
     "ionic-angular": "3.2.1",
+    "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
+    "promise-polyfill": "^6.0.2",
     "rxjs": "5.1.1",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.10"
@@ -47,14 +58,23 @@
     "@ionic/cli-plugin-ionic-angular": "1.3.0",
     "typescript": "2.2.1"
   },
-  "description": "An Ionic project",
+  "description": "Team Weiland Rope Access - Your Friend In High Places",
   "cordova": {
     "plugins": {
       "cordova-plugin-velda-devicefeedback": {},
       "cordova-plugin-vibration": {},
       "cordova-plugin-geolocation": {},
       "cordova-plugin-camera": {},
-      "cordova-plugin-file": {}
-    }
+      "cordova-plugin-file": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }

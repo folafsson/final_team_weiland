@@ -1,4 +1,5 @@
-﻿import { BrowserModule } from '@angular/platform-browser';
+﻿import { Storage } from '@ionic/storage';
+import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule, NavController } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -10,7 +11,6 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { File } from '@ionic-native/file';
-import { Storage } from '@ionic/storage';
 
 import { HomePage } from '../pages/home/home';
 import { ContactPage } from "../pages/contact/contact";
