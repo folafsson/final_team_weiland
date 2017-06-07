@@ -141,7 +141,7 @@ export class AddPlacePage implements OnInit {
         this.places = this.placeService.loadPlaces();
     }
     onOpenPlace(place: Place, index:number) {
-        const modal = this.modalCtrl.create(PlacePage, { place: place, index:index });
+        let modal = this.modalCtrl.create(PlacePage, { place: place, index:index });
         modal.present();
     }
 }

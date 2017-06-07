@@ -4,9 +4,11 @@
     "\\team-weiland",
     "\\team-weiland\\src",
     "\\team-weiland\\src\\app",
+    "\\team-weiland\\src\\pages",
+    "\\team-weiland\\src\\pages\\add-place",
     "\\team-weiland\\src\\serve",
     "\\team-weiland\\src\\theme"
   ],
-  "SelectedNode": "\\team-weiland\\ionic.config.json",
+  "SelectedNode": "\\team-weiland\\src\\serve\\place.serve.ts",
   "PreviewInSolutionExplorer": false
 }
